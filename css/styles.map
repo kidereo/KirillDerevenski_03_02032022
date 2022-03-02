@@ -1,0 +1,26 @@
+{
+	"version": 3,
+	"file": "styles.css",
+	"sources": [
+		"../sass/styles.scss",
+		"../sass/01_utils/_variables.scss",
+		"../sass/01_utils/_functions.scss",
+		"../sass/01_utils/_mixins.scss",
+		"../sass/03_base/_core.scss",
+		"../sass/03_base/_typography.scss",
+		"../sass/05_layout/_container.scss",
+		"../sass/05_layout/_header.scss"
+	],
+	"sourcesContent": [
+		"//Import utils\n@import \"01_utils/variables\";\n@import \"01_utils/functions\";\n@import \"01_utils/mixins\";\n\n@import \"03_base/core\";\n@import \"03_base/typography\";\n\n@import \"05_layout/container\";\n@import \"05_layout/header\";",
+		"//Colours\n$colour-primary: #9356DC;\n$color-secondary: #FF79DA;\n$color-tertiary: #99E2D0;\n$color-black: black;\n\n//Fonts\n$font-logo: 'Shrikhand', cursive;\n$font-text: 'Roboto', sans-serif;",
+		"",
+		"",
+		"* {\n  box-sizing: border-box;\n}",
+		"body {\n  font-family: $font-text;\n  display: flex;\n  justify-content: center;\n}\n",
+		".container {\n  width: 100%;\n  height: 1000px;\n  max-width: 768px;\n  margin-right: auto;\n  margin-left: auto;\n  padding: 10px;\n  background-color: lightgray;\n}",
+		"header {\n  display: flex;\n  justify-content: center;\n  img {\n    height: 40px;\n  }\n}"
+	],
+	"names": [],
+	"mappings": ";AIAA,AAAA,CAAC,CAAC;EACA,UAAU,EAAE,UAAU;CACvB;;;ACFD,AAAA,IAAI,CAAC;EACH,WAAW,EJOD,QAAQ,EAAE,UAAU;EIN9B,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;CACxB;;;ACJD,AAAA,UAAU,CAAC;EACT,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,MAAM;EACd,SAAS,EAAE,KAAK;EAChB,YAAY,EAAE,IAAI;EAClB,WAAW,EAAE,IAAI;EACjB,OAAO,EAAE,IAAI;EACb,gBAAgB,EAAE,SAAS;CAC5B;;;ACRD,AAAA,MAAM,CAAC;EACL,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;CAIxB;;;AAND,AAGE,MAHI,CAGJ,GAAG,CAAC;EACF,MAAM,EAAE,IAAI;CACb"
+}
