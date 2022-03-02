@@ -1,9 +1,18 @@
-//Colours
+//Corporate colours
 $colour-primary: #9356DC;
-$color-secondary: #FF79DA;
-$color-tertiary: #99E2D0;
-$color-black: black;
+$colour-secondary: #FF79DA;
+$colour-tertiary: #99E2D0;
+
+//Gray colours
+$colour-page-background: rgb(132, 132, 132);
+$colour-neutral-gray: rgb(229, 229, 229);
+$colour-light-gray: rgb(244, 244, 244);
+$colour-black: black;
 
 //Fonts
 $font-logo: 'Shrikhand', cursive;
 $font-text: 'Roboto', sans-serif;
+
+//Lighter or darker
+$lighten-amount: 5%;
+$darken-amount: 15%;

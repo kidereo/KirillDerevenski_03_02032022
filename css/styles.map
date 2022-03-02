@@ -9,18 +9,22 @@
 		"../sass/03_base/_core.scss",
 		"../sass/03_base/_typography.scss",
 		"../sass/05_layout/_container.scss",
-		"../sass/05_layout/_header.scss"
+		"../sass/05_layout/_header.scss",
+		"../sass/05_layout/_geolocation.scss",
+		"../sass/05_layout/_hero.scss"
 	],
 	"sourcesContent": [
-		"//Import utils\n@import \"01_utils/variables\";\n@import \"01_utils/functions\";\n@import \"01_utils/mixins\";\n\n@import \"03_base/core\";\n@import \"03_base/typography\";\n\n@import \"05_layout/container\";\n@import \"05_layout/header\";",
-		"//Colours\n$colour-primary: #9356DC;\n$color-secondary: #FF79DA;\n$color-tertiary: #99E2D0;\n$color-black: black;\n\n//Fonts\n$font-logo: 'Shrikhand', cursive;\n$font-text: 'Roboto', sans-serif;",
+		"//Import utils\n@import \"01_utils/variables\";\n@import \"01_utils/functions\";\n@import \"01_utils/mixins\";\n\n@import \"03_base/core\";\n@import \"03_base/typography\";\n\n@import \"05_layout/container\";\n@import \"05_layout/header\";\n@import \"05_layout/geolocation\";\n@import \"05_layout/hero\";",
+		"//Corporate colours\n$colour-primary: #9356DC;\n$colour-secondary: #FF79DA;\n$colour-tertiary: #99E2D0;\n\n//Gray colours\n$colour-page-background: rgb(132, 132, 132);\n$colour-neutral-gray: rgb(229, 229, 229);\n$colour-light-gray: rgb(244, 244, 244);\n$colour-black: black;\n\n//Fonts\n$font-logo: 'Shrikhand', cursive;\n$font-text: 'Roboto', sans-serif;\n\n//Lighter or darker\n$lighten-amount: 5%;\n$darken-amount: 15%;",
 		"",
 		"",
 		"* {\n  box-sizing: border-box;\n}",
-		"body {\n  font-family: $font-text;\n  display: flex;\n  justify-content: center;\n  background-color: lightgray;\n}\n",
-		".container {\n  width: 100%;\n  height: 1000px;\n  max-width: 400px;\n  margin: 5px auto 5px auto;\n  padding: 10px;\n  background-color: white;\n  border: 1px solid grey;\n  border-radius: 20px;\n  box-shadow: 0px 5px 5px 1px gray;\n}",
-		"header {\n  display: flex;\n  justify-content: center;\n  img {\n    height: 40px;\n  }\n}"
+		"body {\n  font-family: $font-text;\n  display: flex;\n  justify-content: center;\n  background-color: $colour-page-background;\n}\n\nh1 {\n  font-size: x-large;\n  font-weight: 600;\n}\n",
+		".container {\n  width: 100%;\n  max-width: 400px;\n  margin: 5px auto 5px auto;\n  background-color: white;\n  box-shadow: 0 5px 20px 1px darken($colour-page-background, $darken-amount);\n  border-radius: 20px;\n  padding-bottom: 50px;\n}",
+		"header {\n  display: flex;\n  justify-content: center;\n  border-bottom: 1px solid darkgray;\n  padding: 15px 0 15px 0;\n  box-shadow: 0 1px 3px 1px darkgray;\n  z-index:1;\n  position: relative;\n  img {\n    height: 30px;\n  }\n}",
+		".geolocation {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  background-color: $colour-neutral-gray;\n  z-index:0;\n  position: relative;\n  &__image {\n    padding: 0 15px 0 15px;\n  }\n}",
+		".hero {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding: 50px 30px 60px 30px;\n  background-color: $colour-light-gray;\n\n  &__heading, &__text {\n    text-align: center;\n  }\n\n  &__button {\n    margin-top: 30px;\n    padding: 15px 20px 15px 20px;\n    font-weight: 600;\n    font-size: small;\n    color: white;\n    border: 1px solid $colour-primary;\n    border-radius: 50px;\n    cursor: pointer;\n    background-image: linear-gradient(to bottom right, $colour-secondary, $colour-primary);\n    box-shadow: 0 1px 3px 1px darkgray;\n\n    &:hover {\n      box-shadow: 0 3px 5px 1px darkgray;\n      background-image: linear-gradient(to bottom right, lighten($colour-secondary, $lighten-amount), lighten($colour-primary, $lighten-amount));\n    }\n  }\n}"
 	],
 	"names": [],
-	"mappings": ";AIAA,AAAA,CAAC,CAAC;EACA,UAAU,EAAE,UAAU;CACvB;;;ACFD,AAAA,IAAI,CAAC;EACH,WAAW,EJOD,QAAQ,EAAE,UAAU;EIN9B,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,gBAAgB,EAAE,SAAS;CAC5B;;;ACLD,AAAA,UAAU,CAAC;EACT,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,MAAM;EACd,SAAS,EAAE,KAAK;EAChB,MAAM,EAAE,iBAAiB;EACzB,OAAO,EAAE,IAAI;EACb,gBAAgB,EAAE,KAAK;EACvB,MAAM,EAAE,cAAc;EACtB,aAAa,EAAE,IAAI;EACnB,UAAU,EAAE,oBAAoB;CACjC;;;ACVD,AAAA,MAAM,CAAC;EACL,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;CAIxB;;;AAND,AAGE,MAHI,CAGJ,GAAG,CAAC;EACF,MAAM,EAAE,IAAI;CACb"
+	"mappings": ";AIAA,AAAA,CAAC,CAAC;EACA,UAAU,EAAE,UAAU;CACvB;;;ACFD,AAAA,IAAI,CAAC;EACH,WAAW,EJYD,QAAQ,EAAE,UAAU;EIX9B,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,gBAAgB,EJEO,OAAkB;CID1C;;;AAED,AAAA,EAAE,CAAC;EACD,SAAS,EAAE,OAAO;EAClB,WAAW,EAAE,GAAG;CACjB;;;ACVD,AAAA,UAAU,CAAC;EACT,KAAK,EAAE,IAAI;EACX,SAAS,EAAE,KAAK;EAChB,MAAM,EAAE,iBAAiB;EACzB,gBAAgB,EAAE,KAAK;EACvB,UAAU,EAAE,CAAC,CAAC,GAAG,CAAC,IAAI,CAAC,GAAG,CAAC,OAA+C;EAC1E,aAAa,EAAE,IAAI;EACnB,cAAc,EAAE,IAAI;CACrB;;;ACRD,AAAA,MAAM,CAAC;EACL,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,aAAa,EAAE,kBAAkB;EACjC,OAAO,EAAE,aAAa;EACtB,UAAU,EAAE,sBAAsB;EAClC,OAAO,EAAC,CAAC;EACT,QAAQ,EAAE,QAAQ;CAInB;;;AAXD,AAQE,MARI,CAQJ,GAAG,CAAC;EACF,MAAM,EAAE,IAAI;CACb;;;ACVH,AAAA,YAAY,CAAC;EACX,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EACnB,gBAAgB,EPGI,OAAkB;EOFtC,OAAO,EAAC,CAAC;EACT,QAAQ,EAAE,QAAQ;CAInB;;;AAHE,AAAD,mBAAQ,CAAC;EACP,OAAO,EAAE,aAAa;CACvB;;;ACTH,AAAA,KAAK,CAAC;EACJ,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,WAAW,EAAE,MAAM;EACnB,OAAO,EAAE,mBAAmB;EAC5B,gBAAgB,ERGE,OAAkB;CQoBrC;;;AArBE,AAAD,cAAU,EAAG,WAAM,CAAC;EAClB,UAAU,EAAE,MAAM;CACnB;;;AAEA,AAAD,aAAS,CAAC;EACR,UAAU,EAAE,IAAI;EAChB,OAAO,EAAE,mBAAmB;EAC5B,WAAW,EAAE,GAAG;EAChB,SAAS,EAAE,KAAK;EAChB,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,GAAG,CAAC,KAAK,CRhBJ,OAAO;EQiBpB,aAAa,EAAE,IAAI;EACnB,MAAM,EAAE,OAAO;EACf,gBAAgB,EAAE,kDAAoE;EACtF,UAAU,EAAE,sBAAsB;CAMnC;;;AAhBA,AAYC,aAZO,AAYN,MAAM,CAAC;EACN,UAAU,EAAE,sBAAsB;EAClC,gBAAgB,EAAE,kDAAwH;CAC3I"
 }

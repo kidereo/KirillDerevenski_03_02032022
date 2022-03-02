@@ -1,0 +1,29 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 30px 60px 30px;
+  background-color: $colour-light-gray;
+
+  &__heading, &__text {
+    text-align: center;
+  }
+
+  &__button {
+    margin-top: 30px;
+    padding: 15px 20px 15px 20px;
+    font-weight: 600;
+    font-size: small;
+    color: white;
+    border: 1px solid $colour-primary;
+    border-radius: 50px;
+    cursor: pointer;
+    background-image: linear-gradient(to bottom right, $colour-secondary, $colour-primary);
+    box-shadow: 0 1px 3px 1px darkgray;
+
+    &:hover {
+      box-shadow: 0 3px 5px 1px darkgray;
+      background-image: linear-gradient(to bottom right, lighten($colour-secondary, $lighten-amount), lighten($colour-primary, $lighten-amount));
+    }
+  }
+}

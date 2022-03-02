@@ -2,5 +2,10 @@ body {
   font-family: $font-text;
   display: flex;
   justify-content: center;
-  background-color: lightgray;
+  background-color: $colour-page-background;
+}
+
+h1 {
+  font-size: x-large;
+  font-weight: 600;
 }
