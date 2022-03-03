@@ -1,9 +1,8 @@
 header {
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid darkgray;
   padding: 15px 0 15px 0;
-  box-shadow: 0 1px 3px 1px darkgray;
+  box-shadow: 0 1px 2px 1px $colour-page-background;
   z-index:1;
   position: relative;
   img {

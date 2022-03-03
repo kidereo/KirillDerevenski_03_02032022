@@ -17,6 +17,32 @@ h1 {
   font-weight: 600;
 }
 
+/* line 13, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/03_base/_typography.scss */
+h2 {
+  font-size: x-large;
+  font-weight: 600;
+}
+
+/* line 2, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/03_base/_colours.scss */
+.colour-white {
+  color: white;
+}
+
+/* line 6, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/03_base/_colours.scss */
+.colour-primary {
+  color: #9356DC;
+}
+
+/* line 10, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/03_base/_colours.scss */
+.color-secondary {
+  color: #FF79DA;
+}
+
+/* line 14, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/03_base/_colours.scss */
+.colour-tertiary {
+  color: #99E2D0;
+}
+
 /* line 1, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_container.scss */
 .container {
   width: 100%;
@@ -32,14 +58,13 @@ h1 {
 header {
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid darkgray;
   padding: 15px 0 15px 0;
-  box-shadow: 0 1px 3px 1px darkgray;
+  box-shadow: 0 1px 2px 1px #848484;
   z-index: 1;
   position: relative;
 }
 
-/* line 9, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_header.scss */
+/* line 8, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_header.scss */
 header img {
   height: 30px;
 }
@@ -80,7 +105,7 @@ header img {
   font-weight: 600;
   font-size: small;
   color: white;
-  border: 1px solid #9356DC;
+  border: 1px solid #FF79DA;
   border-radius: 50px;
   cursor: pointer;
   background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
@@ -91,6 +116,70 @@ header img {
 .hero__button:hover {
   box-shadow: 0 3px 5px 1px darkgray;
   background-image: linear-gradient(to bottom right, #ff93e1, #a16be0);
+}
+
+/* line 1, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_fonctionnement.scss */
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 30px 60px 30px;
+}
+
+/* line 6, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_fonctionnement.scss */
+.fonctionnement__heading {
+  text-align: left;
+}
+
+/* line 10, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_fonctionnement.scss */
+.fonctionnement__stage__area {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 10px 0 10px;
+}
+
+/* line 17, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_fonctionnement.scss */
+.fonctionnement__stage {
+  background-color: #f4f4f4;
+  border: 1px solid #f4f4f4;
+  border-radius: 30px;
+  padding: 20px 0 20px 0;
+  box-shadow: 0 5px 10px 5px #e5e5e5;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+/* line 29, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_fonctionnement.scss */
+.fonctionnement__stage__image {
+  padding-left: 15px;
+  color: gray;
+  font-size: large;
+  font-weight: 600;
+}
+
+/* line 36, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_fonctionnement.scss */
+.fonctionnement__stage__text {
+  padding-left: 20px;
+  font-weight: 500;
+  font-size: larger;
+}
+
+/* line 42, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_fonctionnement.scss */
+.fonctionnement__stage:hover {
+  background-color: #f2eafb;
+}
+
+/* line 46, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_fonctionnement.scss */
+.fonctionnement__stage:hover .fonctionnement__stage__image {
+  color: #9356DC;
+}
+
+/* line 52, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_fonctionnement.scss */
+.number-pull-left {
+  margin-left: -20px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,54 @@
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 30px 60px 30px;
+
+  &__heading {
+    text-align: left;
+  }
+
+  &__stage__area {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 10px 0 10px;
+  }
+
+  &__stage {
+    background-color: $colour-light-gray;
+    border: 1px solid $colour-light-gray;
+    border-radius: 30px;
+    padding: 20px 0 20px 0;
+    box-shadow: 0 5px 10px 5px $colour-neutral-gray;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    &__image {
+      padding-left: 15px;
+      color: gray;
+      font-size: large;
+      font-weight: 600;
+    }
+
+    &__text {
+      padding-left: 20px;
+      font-weight: 500;
+      font-size: larger;
+    }
+
+    &:hover {
+      background-color: lighten($colour-primary, 35%);
+    }
+
+    &:hover #{&}__image {
+      color: $colour-primary;
+    }
+  }
+}
+
+.number-pull-left {
+  margin-left: -20px;
+}
