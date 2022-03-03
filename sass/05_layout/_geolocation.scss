@@ -3,9 +3,14 @@
   justify-content: center;
   align-items: center;
   background-color: $colour-neutral-gray;
-  z-index:0;
+  z-index: 0;
   position: relative;
+
   &__image {
     padding: 0 15px 0 15px;
+  }
+
+  & p {
+    font-weight: 400;
   }
 }

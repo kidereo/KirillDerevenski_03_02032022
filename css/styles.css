@@ -12,14 +12,26 @@ body {
 }
 
 /* line 8, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/03_base/_typography.scss */
+p {
+  font-size: larger;
+  font-weight: lighter;
+}
+
+/* line 13, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/03_base/_typography.scss */
 h1 {
   font-size: x-large;
   font-weight: 600;
 }
 
-/* line 13, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/03_base/_typography.scss */
+/* line 18, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/03_base/_typography.scss */
 h2 {
   font-size: x-large;
+  font-weight: 600;
+}
+
+/* line 23, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/03_base/_typography.scss */
+h3 {
+  font-size: larger;
   font-weight: 600;
 }
 
@@ -79,9 +91,14 @@ header img {
   position: relative;
 }
 
-/* line 8, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_geolocation.scss */
+/* line 9, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_geolocation.scss */
 .geolocation__image {
   padding: 0 15px 0 15px;
+}
+
+/* line 13, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_geolocation.scss */
+.geolocation p {
+  font-weight: 400;
 }
 
 /* line 1, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_hero.scss */
@@ -103,7 +120,7 @@ header img {
   margin-top: 30px;
   padding: 15px 20px 15px 20px;
   font-weight: 600;
-  font-size: small;
+  font-size: medium;
   color: white;
   border: 1px solid #FF79DA;
   border-radius: 50px;
@@ -180,6 +197,77 @@ header img {
 /* line 52, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_fonctionnement.scss */
 .number-pull-left {
   margin-left: -20px;
+}
+
+/* line 1, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 30px 60px 30px;
+  background-color: #f4f4f4;
+}
+
+/* line 7, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
+.restaurants__heading {
+  text-align: left;
+}
+
+/* line 11, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
+.restaurants__cards__area {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* line 17, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
+.restaurants__card {
+  border: 1px solid #f4f4f4;
+  width: 100%;
+  box-shadow: 0 5px 10px 5px #e5e5e5;
+  border-radius: 20px;
+  background-color: white;
+  line-height: 10px;
+}
+
+/* line 25, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
+.restaurants__card__heading, .restaurants__card__text {
+  padding-left: 20px;
+}
+
+/* line 29, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
+.restaurants__card__flash {
+  color: #32b091;
+  font-weight: 600;
+  border: 1px solid #ade8d9;
+  background-color: #ade8d9;
+  padding: 10px 20px 10px 20px;
+  position: absolute;
+  margin-left: -120px;
+  margin-top: 20px;
+}
+
+/* line 40, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
+.restaurants__card i {
+  position: absolute;
+  margin-left: 280px;
+  margin-top: 170px;
+  font-size: xx-large;
+  font-weight: 100;
+  cursor: pointer;
+}
+
+/* line 49, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
+.restaurants__card i:hover {
+  color: #9356DC;
+}
+
+/* line 54, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
+.restaurants__card img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=styles.css.map */

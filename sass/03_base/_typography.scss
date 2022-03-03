@@ -5,6 +5,11 @@ body {
   background-color: $colour-page-background;
 }
 
+p {
+  font-size: larger;
+  font-weight: lighter;
+}
+
 h1 {
   font-size: x-large;
   font-weight: 600;
@@ -12,5 +17,10 @@ h1 {
 
 h2 {
   font-size: x-large;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: larger;
   font-weight: 600;
 }
