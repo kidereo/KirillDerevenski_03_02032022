@@ -365,7 +365,7 @@ header img {
   opacity: 1;
   color: black;
   z-index: 5;
-  animation: remove-overlay 0s ease-in 4s forwards;
+  animation: remove-overlay 0s ease-in 3s forwards;
 }
 
 /* line 15, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_spinner.scss */
