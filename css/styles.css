@@ -3,6 +3,12 @@
   box-sizing: border-box;
 }
 
+/* line 5, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/03_base/_core.scss */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* line 1, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/03_base/_typography.scss */
 body {
   font-family: "Roboto", sans-serif;
@@ -227,14 +233,21 @@ header img {
   border-radius: 20px;
   background-color: white;
   line-height: 10px;
+  position: relative;
+  margin-bottom: 25px;
 }
 
-/* line 25, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
+/* line 27, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
+.restaurants__card:hover {
+  background-color: #f2eafb;
+}
+
+/* line 31, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
 .restaurants__card__heading, .restaurants__card__text {
   padding-left: 20px;
 }
 
-/* line 29, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
+/* line 35, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
 .restaurants__card__flash {
   color: #32b091;
   font-weight: 600;
@@ -242,26 +255,65 @@ header img {
   background-color: #ade8d9;
   padding: 10px 20px 10px 20px;
   position: absolute;
-  margin-left: -120px;
-  margin-top: 20px;
+  top: 20px;
+  right: 20px;
 }
 
-/* line 40, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
-.restaurants__card i {
+/* line 46, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
+.restaurants__card__heart--solid {
   position: absolute;
-  margin-left: 280px;
-  margin-top: 170px;
-  font-size: xx-large;
-  font-weight: 100;
+  height: 30px;
   cursor: pointer;
+  right: 20px;
+  bottom: 25px;
+  fill: none;
+  stroke-width: 15;
+  stroke: black;
 }
 
-/* line 49, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
-.restaurants__card i:hover {
-  color: #9356DC;
+/* line 56, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
+.restaurants__card__heart--solid:hover {
+  fill: #9356DC;
+  stroke: none;
 }
 
-/* line 54, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
+/* line 62, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
+.restaurants__card__heart--gradient {
+  position: absolute;
+  height: 30px;
+  cursor: pointer;
+  right: 20px;
+  bottom: 25px;
+}
+
+/* line 69, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
+.restaurants__card__heart--gradient--start-colour {
+  stop-color: #FF79DA;
+}
+
+/* line 73, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
+.restaurants__card__heart--gradient--end-colour {
+  stop-color: #9356DC;
+}
+
+/* line 78, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
+.restaurants__card__heart--mask {
+  fill: white;
+}
+
+/* line 81, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
+.restaurants__card__heart--mask--transition {
+  opacity: 0.0;
+  display: inline-block;
+  transition: opacity .4s ease;
+}
+
+/* line 86, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
+.restaurants__card__heart--mask--transition:hover {
+  opacity: 1.0;
+}
+
+/* line 93, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
 .restaurants__card img {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;

@@ -21,6 +21,12 @@
     border-radius: 20px;
     background-color: $colour-white;
     line-height: 10px;
+    position: relative;
+    margin-bottom: 25px;
+
+    &:hover {
+      background-color: lighten($colour-primary, 35%);
+    }
 
     &__heading, &__text {
       padding-left: 20px;
@@ -33,21 +39,54 @@
       background-color: lighten($colour-tertiary, $lighten-amount);
       padding: 10px 20px 10px 20px;
       position: absolute;
-      margin-left: -120px;
-      margin-top: 20px;
+      top: 20px;
+      right: 20px;
     }
 
-    & i {
+    &__heart--solid {
       position: absolute;
-      margin-left: 280px;
-      margin-top: 170px;
-      font-size: xx-large;
-      font-weight: 100;
+      height: 30px;
       cursor: pointer;
+      right: 20px;
+      bottom: 25px;
+      fill: none;
+      stroke-width: 15;
+      stroke: black;
+
+      &:hover {
+        fill: $colour-primary;
+        stroke: none;
+      }
     }
 
-    & i:hover {
-      color: $colour-primary;
+    &__heart--gradient {
+      position: absolute;
+      height: 30px;
+      cursor: pointer;
+      right: 20px;
+      bottom: 25px;
+
+      &--start-colour {
+        stop-color: $colour-secondary;
+      }
+
+      &--end-colour {
+        stop-color: $colour-primary;
+      }
+    }
+
+    &__heart--mask {
+      fill: white;
+
+      &--transition {
+        opacity: 0.0;
+        display: inline-block;
+        transition: opacity .4s ease;
+
+        &:hover {
+          opacity: 1.0;
+        }
+      }
     }
   }
 
