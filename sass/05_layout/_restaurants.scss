@@ -25,7 +25,9 @@
     margin-bottom: 25px;
 
     &:hover {
-      background-color: lighten($colour-primary, 35%);
+      //background-color: lighten($colour-primary, 35%);
+      box-shadow: 0 3px 5px 1px darkgray;
+      opacity: 0.85;
     }
 
     &__heading, &__text {

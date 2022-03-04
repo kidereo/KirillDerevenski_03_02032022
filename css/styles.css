@@ -237,15 +237,16 @@ header img {
 
 /* line 27, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
 .restaurants__card:hover {
-  background-color: #f2eafb;
+  box-shadow: 0 3px 5px 1px darkgray;
+  opacity: 0.85;
 }
 
-/* line 31, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
+/* line 33, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
 .restaurants__card__heading, .restaurants__card__text {
   padding-left: 20px;
 }
 
-/* line 35, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
+/* line 37, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
 .restaurants__card__flash {
   color: #32b091;
   font-weight: 600;
@@ -257,7 +258,7 @@ header img {
   right: 20px;
 }
 
-/* line 46, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
+/* line 48, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
 .restaurants__card__heart--solid {
   position: absolute;
   height: 30px;
@@ -269,13 +270,13 @@ header img {
   stroke: black;
 }
 
-/* line 56, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
+/* line 58, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
 .restaurants__card__heart--solid:hover {
   fill: #9356DC;
   stroke: none;
 }
 
-/* line 62, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
+/* line 64, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
 .restaurants__card__heart--gradient {
   position: absolute;
   height: 30px;
@@ -284,34 +285,34 @@ header img {
   bottom: 25px;
 }
 
-/* line 69, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
+/* line 71, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
 .restaurants__card__heart--gradient--start-colour {
   stop-color: #FF79DA;
 }
 
-/* line 73, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
+/* line 75, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
 .restaurants__card__heart--gradient--end-colour {
   stop-color: #9356DC;
 }
 
-/* line 78, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
+/* line 80, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
 .restaurants__card__heart--mask {
   fill: white;
 }
 
-/* line 81, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
+/* line 83, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
 .restaurants__card__heart--mask--transition {
   opacity: 0.0;
   display: inline-block;
   transition: opacity .5s ease-in;
 }
 
-/* line 86, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
+/* line 88, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
 .restaurants__card__heart--mask--transition:hover {
   opacity: 1.0;
 }
 
-/* line 93, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
+/* line 95, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_restaurants.scss */
 .restaurants__card img {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
