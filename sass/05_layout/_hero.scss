@@ -15,7 +15,7 @@
     font-weight: 600;
     font-size: medium;
     color: white;
-    border: 1px solid $colour-secondary;
+    border: 1px solid transparent;
     border-radius: 50px;
     cursor: pointer;
     background-image: linear-gradient(to bottom right, $colour-secondary, $colour-primary);
