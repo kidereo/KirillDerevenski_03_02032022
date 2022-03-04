@@ -1,0 +1,27 @@
+.footer {
+  padding: 10px 30px 30px 30px;
+  background-color: $colour-footer-background;
+  line-height: 10px;
+
+  &__heading {
+    color: white;
+    font-family: $font-logo;
+    font-size: x-large;
+    padding-bottom: 10px;
+  }
+
+  &__text {
+    color: white;
+    font-size: large;
+    font-weight: 400;
+
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    & i {
+      padding-right: 10px;
+    }
+  }
+}
