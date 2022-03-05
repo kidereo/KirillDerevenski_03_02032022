@@ -1,0 +1,110 @@
+.restaurant {
+
+  &__image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    position: relative;
+
+  }
+
+  &__menu {
+    margin-top: -40px;
+    padding: 30px 20px 30px 20px;
+    width: 100%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-color: $colour-light-gray;
+    position: relative;
+
+    &__heading {
+
+      &__heart--solid {
+        position: absolute;
+        height: 30px;
+        cursor: pointer;
+        right: 20px;
+        top: 45px;
+        fill: none;
+        stroke-width: 15;
+        stroke: black;
+
+        &:hover {
+          fill: $colour-primary;
+          stroke: transparent;
+        }
+      }
+    }
+
+    &__area {
+      h2 {
+        text-transform: uppercase;
+        font-weight: 200;
+        font-size: large;
+        position: relative;
+        &:after {
+          display: block;
+          content: '';
+          width: 10%;
+          height: 3px;
+          background: $colour-tertiary;
+          position: absolute;
+          bottom: -5px;
+        }
+      }
+    }
+
+    &__entries {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    &__card {
+      border: 1px solid $colour-light-gray;
+      width: 100%;
+      box-shadow: 0 5px 10px 5px $colour-neutral-gray;
+      border-radius: 20px;
+      background-color: $colour-white;
+      line-height: 15px;
+      position: relative;
+      margin-bottom: 25px;
+      padding-left: 10px;
+      padding-right: 10px;
+
+      &__price {
+        font-weight: 600;
+        float: right;
+      }
+    }
+
+    &__button {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 40px;
+
+      &__style {
+        margin-top: 30px;
+        padding: 15px 20px 15px 20px;
+        font-weight: 600;
+        font-size: medium;
+        color: white;
+        border: 1px solid transparent;
+        border-radius: 50px;
+        cursor: pointer;
+        background-image: linear-gradient(to bottom right, $colour-secondary, $colour-primary);
+        box-shadow: 0 1px 3px 1px darkgray;
+        width: 50%;
+
+        &:hover {
+          box-shadow: 0 3px 5px 1px darkgray;
+          background-image: linear-gradient(to bottom right, lighten($colour-secondary, $lighten-amount), lighten($colour-primary, $lighten-amount));
+        }
+      }
+    }
+  }
+
+  h1 {
+    font-family: $font-logo;
+  }
+}

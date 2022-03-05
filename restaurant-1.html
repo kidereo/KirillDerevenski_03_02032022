@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Ohmyfood ! La palette du goût</title>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Kirill Derevenski">
+    <meta name="description"
+          content="Project 3 of the OpenClassroom's Développeur d'application - JavaScript React path">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap"
+          rel="stylesheet">
+    <script src="https://kit.fontawesome.com/73f9c930af.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Logo -->
+    <header>
+        <nav>
+            <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+            <a href="index.html"><img src="./img/logo/ohmyfood.png" alt="Logo de Ohmyfood!"></a>
+        </nav>
+    </header>
+
+    <!-- Main section -->
+    <main class="restaurant">
+
+        <!-- Image -->
+        <img src="./img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+             alt="La palette du goût"
+             class="restaurant__image">
+
+        <!-- Restaurants section -->
+        <section class="restaurant__menu">
+
+            <!-- Menu heading -->
+            <div class="restaurant__menu__heading">
+                <h1>La palette du goût</h1>
+                <svg class="restaurant__menu__heading__heart--solid" xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 512 512">
+                    <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/>
+                </svg>
+            </div>
+
+            <!-- Menu entries -->
+            <div class="restaurant__menu__area">
+
+                <div class="restaurant__menu__entries">
+                    <h2>Entrées</h2>
+                    <article class="restaurant__menu__card">
+                        <h3 class="">Fricassée d'escargot</h3>
+                        <p class="">Au piment d'Espelette<span class="restaurant__menu__card__price">€25</span></p>
+                    </article>
+
+                    <article class="restaurant__menu__card">
+                        <h3 class="">Foie gras de canard mi-cuit</h3>
+                        <p class="">Et ses copeaux de truffe noire<span class="restaurant__menu__card__price">€35</span>
+                        </p>
+                    </article>
+
+                    <article class="restaurant__menu__card">
+                        <h3 class="">Oeuf au plat</h3>
+                        <p class="">Assaisonné à la truffe sur lit de caviar<span class="restaurant__menu__card__price">€20</span>
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+
+            <!-- Buy button -->
+            <div class="restaurant__menu__button">
+                <button class="restaurant__menu__button__style">Commander</button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer__heading">ohmyfood</p>
+        <p class="footer__text"><i class="fas fa-utensils"></i>Proposer un restaurant</p>
+        <p class="footer__text"><i class="fas fa-hands-helping"></i>Devenir partenaire</p>
+        <p class="footer__text">Mentiones legales</p>
+        <p class="footer__text"><a href="mailto:contact@ohmyfood.fr">Contact</a></p>
+    </footer>
+
+</div>
+
+</body>
+
+</html>
