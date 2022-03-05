@@ -36,9 +36,9 @@
   font-size: xx-large;
   color: $colour-primary;
 
-  @for $i from 1 through 9 {
+  @for $i from 1 through $string-length {
     &--#{$i} {
-      animation: drop 1.2s ease-in-out infinite;
+      animation: drop 1s ease-in-out 1;
       animation-delay: 1s + 0.1s * $i;
     }
   }
