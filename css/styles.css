@@ -4,12 +4,12 @@
   }
   20% {
     opacity: 1;
-    top: 200px;
+    top: 100px;
     transform: rotateX(-360deg);
   }
   80% {
     opacity: 1;
-    top: 200px;
+    top: 100px;
     transform: rotateX(-360deg);
   }
   90% {
@@ -99,7 +99,7 @@ h3 {
 /* line 1, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_container.scss */
 .container {
   width: 100%;
-  max-width: 500px;
+  max-width: 700px;
   margin: 5px auto 5px auto;
   background-color: white;
   box-shadow: 0 5px 20px 1px #5e5e5e;
@@ -430,7 +430,6 @@ header i {
 
 /* line 32, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_spinner.scss */
 .loader {
-  margin: 0;
   padding: 0;
   font-family: "Shrikhand", cursive;
   font-size: xx-large;
@@ -488,10 +487,73 @@ header i {
 /* line 46, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_spinner.scss */
 .loader span {
   position: relative;
-  top: 10px;
+  top: 0;
   display: inline-block;
   opacity: 0;
   transform: rotateX(-90deg);
+}
+
+/* line 2, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_test.scss */
+#restaurant__menu__card {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #f4f4f4;
+  width: 100%;
+  box-shadow: 0 5px 10px 5px #e5e5e5;
+  border-radius: 20px;
+  background-color: white;
+  margin-bottom: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+}
+
+/* line 18, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_test.scss */
+#restaurant__menu__card__content {
+  width: 60%;
+}
+
+/* line 23, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_test.scss */
+#restaurant__menu__card__content span {
+  position: absolute;
+  bottom: 0;
+  right: 85px;
+  padding-bottom: 20px;
+  font-size: larger;
+  font-weight: 600;
+}
+
+/* line 32, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_test.scss */
+#restaurant__menu__card h3 {
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* line 39, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_test.scss */
+#restaurant__menu__card p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 10px;
+}
+
+/* line 46, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_test.scss */
+#restaurant__menu__card__icon {
+  background-color: #99E2D0;
+  width: 70px;
+  margin-right: -10px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: white;
+  font-size: xx-large;
+  text-align: center;
+}
+
+/* line 59, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/05_layout/_test.scss */
+#restaurant__menu__card__icon i {
+  margin-top: 45%;
 }
 
 /* line 3, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/06_pages/_restaurant.scss */
@@ -592,9 +654,13 @@ header i {
 /* line 92, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/06_pages/_restaurant.scss */
 .restaurant__menu__card h3 {
   margin-bottom: 10px;
+  width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-/* line 96, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/06_pages/_restaurant.scss */
+/* line 100, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/06_pages/_restaurant.scss */
 .restaurant__menu__card p {
   width: 80%;
   white-space: nowrap;
@@ -603,7 +669,7 @@ header i {
   margin-top: 10px;
 }
 
-/* line 104, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/06_pages/_restaurant.scss */
+/* line 108, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/06_pages/_restaurant.scss */
 .restaurant__menu__card__price {
   font-weight: 600;
   position: absolute;
@@ -612,14 +678,14 @@ header i {
   font-size: larger;
 }
 
-/* line 113, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/06_pages/_restaurant.scss */
+/* line 117, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/06_pages/_restaurant.scss */
 .restaurant__menu__button {
   display: flex;
   justify-content: center;
   padding-bottom: 40px;
 }
 
-/* line 118, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/06_pages/_restaurant.scss */
+/* line 122, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/06_pages/_restaurant.scss */
 .restaurant__menu__button__style {
   margin-top: 30px;
   padding: 15px 20px 15px 20px;
@@ -634,13 +700,13 @@ header i {
   width: 50%;
 }
 
-/* line 131, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/06_pages/_restaurant.scss */
+/* line 135, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/06_pages/_restaurant.scss */
 .restaurant__menu__button__style:hover {
   box-shadow: 0 3px 5px 1px darkgray;
   background-image: linear-gradient(to bottom right, #ff93e1, #a16be0);
 }
 
-/* line 139, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/06_pages/_restaurant.scss */
+/* line 143, ../../../../../Users/kirill/Code/openclassrooms/KirillDerevenski_03_02032022/sass/06_pages/_restaurant.scss */
 .restaurant h1 {
   font-family: "Shrikhand", cursive;
 }

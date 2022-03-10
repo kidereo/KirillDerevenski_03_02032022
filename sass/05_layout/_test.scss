@@ -1,0 +1,62 @@
+
+#restaurant__menu__card {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid $colour-light-gray;
+  width: 100%;
+  box-shadow: 0 5px 10px 5px $colour-neutral-gray;
+  border-radius: 20px;
+  background-color: $colour-white;
+
+  margin-bottom: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  position:relative;
+}
+
+#restaurant__menu__card__content {
+  width: 60%;
+
+}
+
+#restaurant__menu__card__content span {
+  position: absolute;
+  bottom: 0;
+  right: 85px;
+  padding-bottom: 20px;
+  font-size: larger;
+  font-weight: 600;
+}
+
+#restaurant__menu__card h3 {
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#restaurant__menu__card p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 10px;
+}
+
+#restaurant__menu__card__icon {
+  background-color: $colour-tertiary;
+  width: 70px;
+  margin-right: -10px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: white;
+  font-size: xx-large;
+  text-align: center;
+
+
+}
+
+#restaurant__menu__card__icon i {
+  margin-top: 45%;
+}
+
