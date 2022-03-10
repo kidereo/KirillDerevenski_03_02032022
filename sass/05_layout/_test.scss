@@ -12,21 +12,24 @@
   padding-left: 10px;
   padding-right: 10px;
 
-  position:relative;
+  position: relative;
+  overflow: hidden;
+  transition: 1s;
 }
 
 #restaurant__menu__card__content {
-  width: 60%;
-
+  width: 80%;
+  transition: 1s;
 }
 
 #restaurant__menu__card__content span {
   position: absolute;
   bottom: 0;
-  right: 85px;
+  right: 10px;
   padding-bottom: 20px;
   font-size: larger;
   font-weight: 600;
+  transition: 1s;
 }
 
 #restaurant__menu__card h3 {
@@ -53,10 +56,39 @@
   font-size: xx-large;
   text-align: center;
 
-
+  position: absolute;
+  right: -60px;
+  height: 100%;
+  transition: 1s;
 }
 
 #restaurant__menu__card__icon i {
   margin-top: 45%;
+  transition: 1s;
 }
+
+
+#restaurant__menu__card:hover {
+  cursor: pointer;
+}
+
+#restaurant__menu__card:hover #restaurant__menu__card__content{
+
+  width: 60%;
+}
+
+#restaurant__menu__card:hover #restaurant__menu__card__icon {
+
+  right: 10px;
+}
+
+#restaurant__menu__card:hover #restaurant__menu__card__content span {
+  right: 80px;
+}
+
+#restaurant__menu__card:hover #restaurant__menu__card__icon i {
+  transform: rotateZ(360deg);
+
+}
+
 
