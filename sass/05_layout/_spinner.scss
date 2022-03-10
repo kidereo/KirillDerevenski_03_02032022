@@ -20,21 +20,12 @@
   }
 }
 
-@keyframes remove-overlay {
-  to {
-    width: 0;
-    height: 0;
-    overflow: hidden;
-  }
-}
-
 //Loader
 .loader {
   padding: 0;
   font-family: $font-logo;
   font-size: xx-large;
   color: $colour-primary;
-
 
   @for $i from 1 through $string-length {
     &--#{$i} {
