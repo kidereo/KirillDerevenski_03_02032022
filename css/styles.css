@@ -204,4 +204,4 @@ header i { position: absolute; top: 20px; left: 20px; font-size: x-large; }
 
 .restaurant__menu__button__style:hover { box-shadow: 0 3px 5px 1px darkgray; background-image: linear-gradient(to bottom right, #ff93e1, #a16be0); }
 
-.restaurant h1 { font-family: "Shrikhand", cursive; font-size: x-large; }
+.restaurant h1 { font-family: "Shrikhand", cursive; }
