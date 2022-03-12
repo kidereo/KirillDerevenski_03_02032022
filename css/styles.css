@@ -42,7 +42,11 @@ h3 { font-size: larger; font-weight: 600; }
 
 .colour-tertiary { color: #99E2D0; }
 
-.container { width: 100%; max-width: 400px; margin: 5px auto 5px auto; background-color: white; box-shadow: 0 5px 20px 1px #5e5e5e; }
+.container { width: 100%; max-width: 767px; margin: 0 auto 0 auto; background-color: white; box-shadow: 0 5px 20px 1px #5e5e5e; }
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) { .container { max-width: 1023px; } }
+
+@media only screen and (min-width: 1024px) { .container { max-width: 1024px; } }
 
 header { display: flex; justify-content: center; padding: 15px 0 15px 0; box-shadow: 0 1px 2px 1px #848484; z-index: 1; position: relative; }
 
@@ -58,11 +62,16 @@ header i { position: absolute; top: 20px; left: 20px; font-size: x-large; }
 
 .hero { display: flex; flex-direction: column; align-items: center; padding: 50px 30px 60px 30px; background-color: #f4f4f4; }
 
+.hero__image { display: none; }
+
 .hero__heading, .hero__text { text-align: center; }
 
 .hero__button { margin-top: 30px; padding: 15px 20px 15px 20px; font-weight: 600; font-size: medium; color: white; border: 1px solid transparent; border-radius: 50px; cursor: pointer; background-image: linear-gradient(to bottom right, #FF79DA, #9356DC); box-shadow: 0 1px 3px 1px darkgray; }
 
 .hero__button:hover { box-shadow: 0 3px 5px 1px darkgray; background-image: linear-gradient(to bottom right, #ff93e1, #a16be0); }
+
+@media only screen and (min-width: 1024px) { .hero { margin-top: -40px; border-top-left-radius: 40px; border-top-right-radius: 40px; position: relative; }
+  .hero__image { display: inline-block; width: 100%; height: 450px; object-fit: cover; position: relative; } }
 
 .fonctionnement { display: flex; flex-direction: column; padding: 50px 30px 60px 30px; }
 
@@ -81,6 +90,12 @@ header i { position: absolute; top: 20px; left: 20px; font-size: x-large; }
 .fonctionnement__stage:hover .fonctionnement__stage__image { color: #9356DC; }
 
 .number-pull-left { margin-left: -20px; }
+
+@media only screen and (min-width: 1024px) { .fonctionnement__heading { text-align: center; padding-bottom: 40px; }
+  .fonctionnement__stage__area { flex-direction: row; justify-content: space-between; }
+  .fonctionnement__stage { flex: 1 1 0; width: 0; margin: 0 25px 0 25px; }
+  .fa-1x { font-size: 1.5em !important; }
+  .number-pull-left { margin-left: -30px; } }
 
 .restaurants { display: flex; flex-direction: column; padding: 50px 30px 60px 30px; background-color: #f4f4f4; }
 
@@ -114,6 +129,10 @@ header i { position: absolute; top: 20px; left: 20px; font-size: x-large; }
 
 .restaurants__card img { border-top-left-radius: 20px; border-top-right-radius: 20px; width: 100%; height: 150px; object-fit: cover; }
 
+@media only screen and (min-width: 1024px) { .restaurants__heading { text-align: center; padding-bottom: 20px; }
+  .restaurants__cards__area { flex-wrap: wrap; flex-direction: row; }
+  .restaurants__card { flex: 1 1 45%; margin: 20px; } }
+
 .footer { padding: 10px 30px 30px 30px; background-color: #282828; line-height: 15px; }
 
 .footer__heading { color: white; font-family: "Shrikhand", cursive; font-size: x-large; padding-bottom: 10px; }
@@ -123,6 +142,9 @@ header i { position: absolute; top: 20px; left: 20px; font-size: x-large; }
 .footer__text:hover { text-decoration: underline; cursor: pointer; }
 
 .footer__text i { padding-right: 10px; }
+
+@media only screen and (min-width: 1024px) { .footer { display: flex; flex-flow: row; align-items: center; justify-content: space-between; }
+  .footer__heading { padding-bottom: 0; } }
 
 .overlay { text-align: center; position: fixed; top: 0; left: 0; height: 100%; width: 100%; background-color: #f2eafb; opacity: 1; color: black; z-index: 5; animation: remove-overlay 0s ease-in 3s forwards; }
 
@@ -205,3 +227,10 @@ header i { position: absolute; top: 20px; left: 20px; font-size: x-large; }
 .restaurant__menu__button__style:hover { box-shadow: 0 3px 5px 1px darkgray; background-image: linear-gradient(to bottom right, #ff93e1, #a16be0); }
 
 .restaurant h1 { font-family: "Shrikhand", cursive; }
+
+@media only screen and (min-width: 1024px) { .restaurant__menu__area h2 { text-align: center; }
+  .restaurant__menu__area h2:after { margin-left: 40%; margin-right: 40%; width: 20%; }
+  .restaurant__menu__cards { display: flex; flex-direction: row; flex-wrap: wrap; margin-bottom: 50px; }
+  .restaurant__menu__card { flex: 0 1 45%; margin: 20px; }
+  .restaurant__menu__card__content { width: 90%; }
+  .restaurant__menu__card:hover .restaurant__menu__card__content { width: 70%; } }

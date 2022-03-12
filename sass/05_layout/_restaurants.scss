@@ -100,3 +100,25 @@
     object-fit: cover;
   }
 }
+
+@media only screen and (min-width: $breakpoint-desktop) {
+  .restaurants {
+
+    &__heading {
+      text-align: center;
+      padding-bottom: 20px;
+    }
+
+    &__cards__area {
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+
+    &__card {
+      flex: 1 1 45%;
+      margin: 20px;
+    }
+
+
+  }
+}

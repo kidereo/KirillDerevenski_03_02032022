@@ -1,7 +1,19 @@
 .container {
   width: 100%;
-  max-width: 400px;
-  margin: 5px auto 5px auto;
+  max-width: $breakpoint-mobile;
+  margin: 0 auto 0 auto;
   background-color: white;
   box-shadow: 0 5px 20px 1px darken($colour-page-background, $darken-amount);
+}
+
+@media only screen and (max-width: $breakpoint-tablet-max) and (min-width: $breakpoint-tablet-min) {
+  .container {
+    max-width: $breakpoint-tablet-max;
+  }
+}
+
+@media only screen and (min-width: $breakpoint-desktop) {
+  .container {
+    max-width: $breakpoint-desktop;
+  }
 }

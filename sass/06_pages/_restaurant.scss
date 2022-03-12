@@ -137,7 +137,6 @@
         }
       }
 
-
       &__content {
         width: 80%;
         transition: 1s;
@@ -217,5 +216,52 @@
 
   h1 {
     font-family: $font-logo;
+  }
+}
+
+@media only screen and (min-width: $breakpoint-desktop) {
+  .restaurant {
+
+    &__menu {
+
+      &__area {
+
+        h2 {
+          text-align: center;
+
+          &:after {
+            margin-left: 40%;
+            margin-right: 40%;
+            width: 20%;
+          }
+        }
+      }
+
+      &__entries {
+
+      }
+
+      &__cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+      }
+
+      &__card {
+        flex: 0 1 45%;
+        margin: 20px;
+
+        &__content {
+          width: 90%;
+        }
+
+        &:hover {
+          & .restaurant__menu__card__content {
+            width: 70%;
+          }
+        }
+      }
+    }
   }
 }

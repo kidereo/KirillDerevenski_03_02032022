@@ -19,5 +19,12 @@ $font-text: 'Roboto', sans-serif;
 $lighten-amount: 5%;
 $darken-amount: 15%;
 
+//Responsive design breakpoints
+$breakpoint-mobile: 767px;
+$breakpoint-tablet-min: 768px;
+$breakpoint-tablet-max: 1023px;
+$breakpoint-desktop: 1024px;
+
+
 //Misc
 $string-length: str-length('ohmyfood');

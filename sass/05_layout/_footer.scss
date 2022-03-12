@@ -25,3 +25,19 @@
     }
   }
 }
+
+@media only screen and (min-width: $breakpoint-desktop) {
+  .footer {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+
+    &__heading {
+      padding-bottom: 0;
+    }
+
+    &__text {
+    }
+  }
+}
