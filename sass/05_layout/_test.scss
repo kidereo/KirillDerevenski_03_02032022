@@ -1,94 +1,106 @@
-
-#restaurant__menu__card {
-  display: flex;
-  justify-content: space-between;
-  border: 1px solid $colour-light-gray;
-  width: 100%;
-  box-shadow: 0 5px 10px 5px $colour-neutral-gray;
-  border-radius: 20px;
-  background-color: $colour-white;
-
-  margin-bottom: 25px;
-  padding-left: 10px;
-  padding-right: 10px;
-
+#slider {
+  background: #000;
+  height: 450px;
+  width: 100% ;
+  overflow: visible;
   position: relative;
+  object-fit: cover;
+}
+
+/* HIDE ALL OUTSIDE OF THE SLIDER */
+
+#mask {
   overflow: hidden;
-  transition: 1s;
+  height: 450px;
 }
 
-#restaurant__menu__card__content {
-  width: 80%;
-  transition: 1s;
+/* IMAGE LIST */
+
+#slider ul {
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 
-#restaurant__menu__card__content span {
+#slider li {
+  width: 100%;  /* Width Image */
+  height: 450px; /* Height Image */
   position: absolute;
-  bottom: 0;
-  right: 10px;
-  padding-bottom: 20px;
-  font-size: larger;
-  font-weight: 600;
-  transition: 1s;
+  top: -450px; /* Original Position - Outside of the Slider */
+  list-style: none;
 }
 
-#restaurant__menu__card h3 {
-  margin-bottom: 10px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+#slider li.firstanimation {
+  animation: cycle 25s ease-in-out infinite;
 }
 
-#restaurant__menu__card p {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  margin-top: 10px;
+#slider li.secondanimation {
+  animation: cycletwo 25s ease-in-out infinite;
 }
 
-#restaurant__menu__card__icon {
-  background-color: $colour-tertiary;
-  width: 70px;
-  margin-right: -10px;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  color: white;
-  font-size: xx-large;
-  text-align: center;
-
-  position: absolute;
-  right: -60px;
-  height: 100%;
-  transition: 1s;
+#slider li.thirdanimation {
+  animation: cyclethree 25s ease-in-out infinite;
 }
 
-#restaurant__menu__card__icon i {
-  margin-top: 45%;
-  transition: 1s;
+#slider li.fourthanimation {
+  animation: cyclefour 25s ease-in-out infinite;
 }
 
-
-#restaurant__menu__card:hover {
-  cursor: pointer;
+#slider li.fifthanimation {
+  animation: cyclefive 25s ease-in-out infinite;
 }
 
-#restaurant__menu__card:hover #restaurant__menu__card__content{
+/* ANIMATION */
 
-  width: 60%;
+@keyframes cycle {
+  0%  { top: 0px; } /* When you start the slide, the first image is already visible */
+  4%  { top: 0px; } /* Original Position */
+  16% { top: 0px; opacity:1; z-index:0; } /* From 4% to 16 % = for 3 seconds the image is visible */
+  20% { top: 450px; opacity: 0; z-index: 0; } /* From 16% to 20% = for 1 second exit image */
+  21% { top: -450px; opacity: 0; z-index: -1; } /* Return to Original Position */
+  92% { top: -450px; opacity: 0; z-index: 0; }
+  96% { top: -450px; opacity: 0; } /* From 96% to 100% = for 1 second enter image*/
+  100%{ top: 0px; opacity: 1; }
 }
 
-#restaurant__menu__card:hover #restaurant__menu__card__icon {
-
-  right: 10px;
+@keyframes cycletwo {
+  0%  { top: -450px; opacity: 0; } /* Original Position */
+  16% { top: -450px; opacity: 0; }/* Starts moving after 16% to this position */
+  20% { top: 0px; opacity: 1; }
+  24% { top: 0px; opacity: 1; }  /* From 20% to 24% = for 1 second enter image*/
+  36% { top: 0px; opacity: 1; z-index: 0; }   /* From 24% to 36 % = for 3 seconds the image is visible */
+  40% { top: 450px; opacity: 0; z-index: 0; } /* From 36% to 40% = for 1 second exit image */
+  41% { top: -450px; opacity: 0; z-index: -1; }   /* Return to Original Position */
+  100%{ top: -450px; opacity: 0; z-index: -1; }
 }
 
-#restaurant__menu__card:hover #restaurant__menu__card__content span {
-  right: 80px;
+@keyframes cyclethree {
+  0%  { top: -450px; opacity: 0; }
+  36% { top: -450px; opacity: 0; }
+  40% { top: 0px; opacity: 1; }
+  44% { top: 0px; opacity: 1; }
+  56% { top: 0px; opacity: 1; }
+  60% { top: 450px; opacity: 0; z-index: 0; }
+  61% { top: -450px; opacity: 0; z-index: -1; }
+  100%{ top: -450px; opacity: 0; z-index: -1; }
 }
 
-#restaurant__menu__card:hover #restaurant__menu__card__icon i {
-  transform: rotateZ(360deg);
-
+@keyframes cyclefour {
+  0%  { top: -450px; opacity: 0; }
+  56% { top: -450px; opacity: 0; }
+  60% { top: 0px; opacity: 1; }
+  64% { top: 0px; opacity: 1; }
+  76% { top: 0px; opacity: 1; z-index: 0; }
+  80% { top: 450px; opacity: 0; z-index: 0; }
+  81% { top: -450px; opacity: 0; z-index: -1; }
+  100%{ top: -450px; opacity: 0; z-index: -1; }
 }
 
-
+@keyframes cyclefive {
+  0%  { top: -450px; opacity: 0; }
+  76% { top: -450px; opacity: 0; }
+  80% { top: 0px; opacity: 1; }
+  84% { top: 0px; opacity: 1; }
+  96% { top: 0px; opacity: 1; z-index: 0; }
+  100%{ top: 450px; opacity: 0; z-index: 0; }
+}

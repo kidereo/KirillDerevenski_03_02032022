@@ -17,6 +17,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap"
           rel="stylesheet">
     <script src="https://kit.fontawesome.com/73f9c930af.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+            integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -58,10 +60,19 @@
         </div>
 
         <!-- Hero section -->
-        <img src="./img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-             alt="La palette du goût"
-             class="hero__image">
+        <!-- Carousel banner on desktop devices through js with a static image for not js enabled browsers -->
+        <noscript>
+            <a href="#restaurants">
+                <img src="./img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                     alt="La palette du goût"
+                     class="hero__image">
+            </a>
+        </noscript>
 
+        <a href="#restaurants">
+            <div id="hero__carousel"></div>
+        </a>
+        <!-- Common hero section for all devices -->
         <section class="hero">
             <h1 class="hero__heading">Réservez le menu qui vous convient</h1>
             <p class="hero__text">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
@@ -266,6 +277,11 @@
     </footer>
 
 </div>
+
+<script>
+    var images = ['jay-wennington-N_Y88TWmGwA-unsplash.jpg', 'louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg', 'toa-heftiba-DQKerTsQwi0-unsplash.jpg', 'stil-u2Lp8tXIcjw-unsplash.jpg'];
+    $('<img class="hero__image" alt="Featured restaurant" src="img/restaurants/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#hero__carousel');
+</script>
 
 </body>
 
