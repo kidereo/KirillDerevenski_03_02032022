@@ -42,9 +42,9 @@ h3 { font-size: larger; font-weight: 600; }
 
 .colour-tertiary { color: #99E2D0; }
 
-.container { width: 100%; max-width: 767px; margin: 0 auto 0 auto; background-color: white; box-shadow: 0 5px 20px 1px #5e5e5e; }
+.container { width: 100%; max-width: 766px; margin: 0 auto 0 auto; background-color: white; box-shadow: 0 5px 20px 1px #5e5e5e; }
 
-@media only screen and (max-width: 1023px) and (min-width: 768px) { .container { max-width: 1023px; } }
+@media only screen and (max-width: 1023px) and (min-width: 767px) { .container { max-width: 1023px; } }
 
 @media only screen and (min-width: 1024px) { .container { max-width: 1024px; } }
 
@@ -85,7 +85,7 @@ header i { position: absolute; top: 20px; left: 20px; font-size: x-large; }
 
 .fonctionnement__stage__text { padding-left: 20px; font-weight: 500; font-size: larger; }
 
-.fonctionnement__stage:hover { background-color: #f2eafb; }
+.fonctionnement__stage:hover { background-color: #f2eafb; box-shadow: 0 5px 10px 5px lightgray; }
 
 .fonctionnement__stage:hover .fonctionnement__stage__image { color: #9356DC; }
 
@@ -95,13 +95,24 @@ header i { position: absolute; top: 20px; left: 20px; font-size: x-large; }
   .fonctionnement__stage__area { flex-direction: row; justify-content: space-between; }
   .fonctionnement__stage { flex: 1 1 0; width: 0; margin: 0 25px 0 25px; }
   .fa-1x { font-size: 1.5em !important; }
-  .number-pull-left { margin-left: -30px; } }
+  .number-pull-left { margin-left: -30px; }
+  .shake--1 { animation: shake 3s linear infinite; animation-delay: 1s; }
+  .shake--2 { animation: shake 3s linear infinite; animation-delay: 2s; }
+  .shake--3 { animation: shake 3s linear infinite; animation-delay: 3s; }
+  @keyframes shake { 0%, 7% { transform: scale(1.1); }
+    15% { transform: rotateZ(-15deg); }
+    20% { transform: rotateZ(10deg); }
+    25% { transform: rotateZ(-10deg); }
+    30% { transform: rotateZ(6deg); }
+    35% { transform: rotateZ(-4deg); }
+    40%, 100% { transform: rotateZ(0); } }
+  .fonctionnement__stage__area:hover * { animation-play-state: paused; } }
 
 .restaurants { display: flex; flex-direction: column; padding: 50px 30px 60px 30px; background-color: #f4f4f4; }
 
 .restaurants__heading { text-align: left; }
 
-.restaurants__cards__area { display: flex; flex-direction: column; width: 100%; }
+.restaurants__cards__area { display: flex; flex-direction: column; width: 100%; transition: 1s ease; }
 
 .restaurants__card { border: 1px solid #f4f4f4; width: 100%; box-shadow: 0 5px 10px 5px #e5e5e5; border-radius: 20px; background-color: white; line-height: 10px; position: relative; margin-bottom: 25px; }
 
@@ -132,6 +143,10 @@ header i { position: absolute; top: 20px; left: 20px; font-size: x-large; }
 @media only screen and (min-width: 1024px) { .restaurants__heading { text-align: center; padding-bottom: 20px; }
   .restaurants__cards__area { flex-wrap: wrap; flex-direction: row; }
   .restaurants__card { flex: 1 1 45%; margin: 20px; } }
+
+@media only screen and (max-width: 1023px) and (min-width: 767px) { .restaurants__heading { text-align: center; padding-bottom: 20px; }
+  .restaurants__cards__area { flex-wrap: wrap; flex-direction: row; }
+  .restaurants__card { flex: 1 1 40%; margin: 10px; } }
 
 .footer { padding: 10px 30px 30px 30px; background-color: #282828; line-height: 15px; }
 

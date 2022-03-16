@@ -41,6 +41,7 @@
 
     &:hover {
       background-color: lighten($colour-primary, 35%);
+      box-shadow: 0 5px 10px 5px lightgray;
     }
 
     &:hover #{&}__image {
@@ -49,6 +50,7 @@
   }
 }
 
+//Custom classes for this section
 .number-pull-left {
   margin-left: -20px;
 }
@@ -64,22 +66,57 @@
     &__stage__area {
       flex-direction: row;
       justify-content: space-between;
-
     }
 
     &__stage {
       flex: 1 1 0;
       width: 0;
       margin: 0 25px 0 25px;
-
     }
   }
 
   .fa-1x {
-    font-size: 1.5em!important;
+    font-size: 1.5em !important;
   }
 
   .number-pull-left {
     margin-left: -30px;
+  }
+
+  //Custom shake animation for card numbers
+  @for $i from 1 through 3 {
+    .shake--#{$i} {
+      animation: shake 3s linear infinite;
+      animation-delay: 0s + 1s * $i;
+    }
+  }
+
+  @keyframes shake {
+    0%, 7% {
+      //transform: rotateZ(0);
+      transform: scale(1.1);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
+
+  .fonctionnement__stage__area:hover * {
+    animation-play-state: paused;
   }
 }
