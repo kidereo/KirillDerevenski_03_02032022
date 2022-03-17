@@ -83,21 +83,24 @@
       display: flex;
       flex-direction: column;
       width: 100%;
-      animation: reveal 400ms ease-in;
+      opacity: 0;
+      animation: reveal 500ms linear forwards 1s;
     }
 
     &__mains {
       display: flex;
       flex-direction: column;
       width: 100%;
-      animation: reveal 500ms ease-in;
+      opacity: 0;
+      animation: reveal 500ms linear forwards 2s;
     }
 
     &__desserts {
       display: flex;
       flex-direction: column;
       width: 100%;
-      animation: reveal 600ms ease-in;
+      opacity: 0;
+      animation: reveal 500ms linear forwards 3s;
     }
 
     &__card {
