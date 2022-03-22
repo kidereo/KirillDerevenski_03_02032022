@@ -122,11 +122,11 @@ header i { position: absolute; top: 20px; left: 20px; font-size: x-large; }
 
 .restaurants__card__flash { color: #32b091; font-weight: 600; border: 1px solid #ade8d9; background-color: #ade8d9; padding: 10px 20px 10px 20px; position: absolute; top: 20px; right: 20px; }
 
-.restaurants__card__heart--solid { position: absolute; height: 30px; cursor: pointer; right: 20px; bottom: 25px; fill: none; stroke-width: 15; stroke: black; }
+.restaurants__card__heart--solid { position: absolute; height: 30px; width: 35px; cursor: pointer; right: 20px; bottom: 25px; fill: none; stroke-width: 15; stroke: black; }
 
 .restaurants__card__heart--solid:hover { fill: #9356DC; stroke: none; }
 
-.restaurants__card__heart--gradient { position: absolute; height: 30px; cursor: pointer; right: 20px; bottom: 25px; }
+.restaurants__card__heart--gradient { position: absolute; height: 30px; width: 35px; cursor: pointer; right: 20px; bottom: 25px; }
 
 .restaurants__card__heart--gradient--start-colour { stop-color: #FF79DA; }
 
@@ -189,11 +189,11 @@ header i { position: absolute; top: 20px; left: 20px; font-size: x-large; }
 
 .restaurant__menu { margin-top: -40px; padding: 30px 20px 30px 20px; width: 100%; border-top-left-radius: 40px; border-top-right-radius: 40px; background-color: #f4f4f4; position: relative; }
 
-.restaurant__menu__heading__heart--solid { position: absolute; height: 30px; cursor: pointer; right: 20px; top: 45px; fill: none; stroke-width: 15; stroke: black; }
+.restaurant__menu__heading__heart--solid { position: absolute; height: 30px; width: 35px; cursor: pointer; right: 20px; top: 45px; fill: none; stroke-width: 15; stroke: black; }
 
 .restaurant__menu__heading__heart--solid:hover { fill: #9356DC; stroke: transparent; }
 
-.restaurant__menu__heading__heart--gradient { position: absolute; height: 30px; cursor: pointer; right: 20px; top: 45px; }
+.restaurant__menu__heading__heart--gradient { position: absolute; height: 30px; width: 35px; cursor: pointer; right: 20px; top: 45px; }
 
 .restaurant__menu__heading__heart--mask { fill: white; }
 
@@ -249,3 +249,5 @@ header i { position: absolute; top: 20px; left: 20px; font-size: x-large; }
   .restaurant__menu__card { flex: 0 1 45%; margin: 20px; }
   .restaurant__menu__card__content { width: 90%; }
   .restaurant__menu__card:hover .restaurant__menu__card__content { width: 70%; } }
+
+.test { padding: 5px; }

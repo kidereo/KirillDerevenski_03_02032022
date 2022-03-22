@@ -22,6 +22,7 @@
       &__heart--solid {
         position: absolute;
         height: 30px;
+        width: 35px;
         cursor: pointer;
         right: 20px;
         top: 45px;
@@ -38,6 +39,7 @@
       &__heart--gradient {
         position: absolute;
         height: 30px;
+        width: 35px;
         cursor: pointer;
         right: 20px;
         top: 45px;
@@ -267,4 +269,8 @@
       }
     }
   }
+}
+
+.test {
+  padding: 5px;
 }
